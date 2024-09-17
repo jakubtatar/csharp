@@ -60,20 +60,33 @@ Console.WriteLine(vysledok);
 
 
 //Z databazy
-var menoUzivatela = "Michal";
+var menoUzivatela = "Jakub";
 var hesloPouzivatela = "123456789";
 
-//Zadane uzivatelom
-var zadaneMeno = "Michal";
-var zadaneHeslo = "123456789";
+//zadavanie mena
+Console.WriteLine("Zadajte svoje meno: ");
+var zadaneMeno = Console.ReadLine();
+
+//zadavanie hesla
+Console.WriteLine("Zadajte svoje heslo: ");
+var zadaneHeslo = Console.ReadLine();
 
 //porovnavanie
 var porovnaneMeno = menoUzivatela == zadaneMeno;
 var porovnaneHeslo = hesloPouzivatela == zadaneHeslo;
-
 var PrijatPristup = porovnaneMeno && porovnaneHeslo;
 
 //vystup
 Console.WriteLine("Meno zhoda: " + porovnaneMeno);
 Console.WriteLine("Heslo zhoda: " + porovnaneHeslo);
 Console.WriteLine("Povoleny pristup: " + PrijatPristup);
+
+//odpoved
+if (PrijatPristup)
+{
+    Console.WriteLine("Heslo sa zhoduje, vitaj " + menoUzivatela);
+}
+else
+{
+    Console.WriteLine("Vase heslo alebo meno sa nezhoduje!");
+}
