@@ -46,3 +46,8 @@ Console.WriteLine();
 
 Console.WriteLine(10 <= 50);
 Console.WriteLine(50 >= 50);
+
+Console.WriteLine();
+
+var vysledok = 50 + 10;
+Console.WriteLine(vysledok);
