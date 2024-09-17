@@ -19,7 +19,7 @@ Console.WriteLine("\nAhoj, tvoje meno je " + meno + ", máš " + vek + " rokov a
 
 
 //Operacie
-int prveCislo = 55;
+/*int prveCislo = 55;
 int druheCislo = 80;
 
 Console.WriteLine(prveCislo + druheCislo);
@@ -50,4 +50,30 @@ Console.WriteLine(50 >= 50);
 Console.WriteLine();
 
 var vysledok = 50 + 10;
-Console.WriteLine(vysledok);
+Console.WriteLine(vysledok); 
+
+ 
+ //------------------------------------------------------------------------------------------------------------------------------
+
+
+ */
+
+
+//Z databazy
+var menoUzivatela = "Michal";
+var hesloPouzivatela = "123456789";
+
+//Zadane uzivatelom
+var zadaneMeno = "Michal";
+var zadaneHeslo = "123456789";
+
+//porovnavanie
+var porovnaneMeno = menoUzivatela == zadaneMeno;
+var porovnaneHeslo = hesloPouzivatela == zadaneHeslo;
+
+var PrijatPristup = porovnaneMeno && porovnaneHeslo;
+
+//vystup
+Console.WriteLine("Meno zhoda: " + porovnaneMeno);
+Console.WriteLine("Heslo zhoda: " + porovnaneHeslo);
+Console.WriteLine("Povoleny pristup: " + PrijatPristup);
