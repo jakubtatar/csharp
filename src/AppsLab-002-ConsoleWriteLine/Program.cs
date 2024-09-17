@@ -1,4 +1,5 @@
-﻿
+﻿Console.WriteLine("Hello World!");
+
 string greetings = "Ahoj svet!";
 Console.WriteLine(greetings);
 
