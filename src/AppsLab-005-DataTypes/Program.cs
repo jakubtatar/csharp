@@ -21,3 +21,14 @@ Console.WriteLine("Name: " + name);
 Console.WriteLine("FIrst letter of name: " + firstLetter);
 Console.WriteLine("Is adult: " + isAdult);
 Console.WriteLine("Account ballance: " + accountBalance);
+
+Console.WriteLine("");
+Console.WriteLine(" **********");
+Console.WriteLine(" **********");
+Console.WriteLine("        ***");
+Console.WriteLine(" ***    ***"); 
+Console.WriteLine("        ***");
+Console.WriteLine(" ***    ***");
+Console.WriteLine("        ***");
+Console.WriteLine(" **********");
+Console.WriteLine(" **********");
