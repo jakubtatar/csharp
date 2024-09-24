@@ -50,7 +50,7 @@ public class ArrayProcessor
     /// <returns>Element at the specified position, or 0 if position is out of range.</returns>
     public int GetElementAtPosition(int[] numbers, int position)
     {
-        if (numbers == null || position < 0 || position >= numbers.Length)
+        if (position < 0 || position >= numbers.Length)
         {
             return 0;
         }
