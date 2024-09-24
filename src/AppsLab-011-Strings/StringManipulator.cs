@@ -65,6 +65,13 @@ public class StringManipulator
     /// <returns>True if the string starts with the substring, false otherwise.</returns>
     public bool StartsWithSubstring(string input, string substring)
     {
-        throw new NotImplementedException();
+        if(input.StartsWith(substring))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
