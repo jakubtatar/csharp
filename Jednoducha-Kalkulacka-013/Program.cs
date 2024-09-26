@@ -18,23 +18,27 @@ namespace MyApp
             double number2final = Double.Parse(number2);
 
 
-
             if (operation == "+")
             {
                 Console.WriteLine(number1final + number2final);
             }
-            if (operation == "-")
+            else if (operation == "-")
             {
                 Console.WriteLine(number1final - number2final);
             }
-            if (operation == "*")
+            else if (operation == "*")
             {
                 Console.WriteLine(number1final * number2final);
             }
-            if (operation == "/")
+            else if (operation == "/")
             {
                 Console.WriteLine(number1final / number2final);
             }
+            else
+            {
+                Console.WriteLine("Nespravny znak operacie!");
+            }
+
         }
     }
 }
