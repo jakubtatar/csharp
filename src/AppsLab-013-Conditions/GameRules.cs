@@ -1,4 +1,6 @@
-﻿namespace AppsLab_013_Conditions;
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace AppsLab_013_Conditions;
 
 /// <summary>
 /// Represents the rules of a game.
@@ -15,14 +17,14 @@ public class GameRules
     {
         if (( playerName != null && playerName != "") && playerAge >= 15)
         {
-            return true;
-        }       
+            return true; 
+        }      
         else
         {
             return false;
         }
     }
-
+    
     /// <summary>
     /// Determines whether the game is over based on the player's health.
     /// </summary>
