@@ -13,10 +13,10 @@ public class GameRules
     /// <returns>True if the player can enter the game, false otherwise.</returns>
     public bool CanPlayerEnterGame(string playerName, int playerAge)
     {
-        if (playerName != "" && playerAge >= 15)
+        if (( playerName != null && playerName != "") && playerAge >= 15)
         {
             return true;
-        }
+        }       
         else
         {
             return false;
