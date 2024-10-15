@@ -33,5 +33,12 @@ namespace Cvicenie_OOP_grapocitacowa
             int HPofEnemyAfterFight = HPofEnemy - AttackofCurrentPlayer;
             player.HP = HPofEnemyAfterFight;
         }
+
+        public void HealPlayer()
+        {
+            int ManaOfPlayer = this.Mana;
+            int HPofPlayerAfterHeal = this.HP + ManaOfPlayer;
+            this.HP = HPofPlayerAfterHeal;
+        }
     }
 }
