@@ -15,7 +15,7 @@ namespace MyApp
             {
                 PrintMenu();
                 var answer = Console.ReadLine();
-
+                
                 switch (answer)
                 {
                     case "1":
