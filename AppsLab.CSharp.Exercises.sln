@@ -109,6 +109,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nakupny-Zoznam-Opakovanie_0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_OOP", "Cvicenie_OOP\Cvicenie_OOP.csproj", "{51CF96F6-B57E-449A-BF07-EFE9F7AB0195}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_OOP_grapocitacowa", "Cvicenie_OOP_grapocitacowa\Cvicenie_OOP_grapocitacowa.csproj", "{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -731,6 +733,18 @@ Global
 		{51CF96F6-B57E-449A-BF07-EFE9F7AB0195}.Release|x64.Build.0 = Release|Any CPU
 		{51CF96F6-B57E-449A-BF07-EFE9F7AB0195}.Release|x86.ActiveCfg = Release|Any CPU
 		{51CF96F6-B57E-449A-BF07-EFE9F7AB0195}.Release|x86.Build.0 = Release|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Debug|x64.Build.0 = Debug|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Debug|x86.Build.0 = Debug|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Release|x64.ActiveCfg = Release|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Release|x64.Build.0 = Release|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Release|x86.ActiveCfg = Release|Any CPU
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -787,6 +801,7 @@ Global
 		{50FCD392-041F-4D1C-B40D-4F68BC3A2833} = {56555FB0-B513-49EF-9002-A5AF135EA090}
 		{B41AFD9F-D30D-45DB-86C0-960F2D65EB90} = {56555FB0-B513-49EF-9002-A5AF135EA090}
 		{51CF96F6-B57E-449A-BF07-EFE9F7AB0195} = {56555FB0-B513-49EF-9002-A5AF135EA090}
+		{A52B496C-CD3A-46A5-BBE1-2F47B6F90338} = {56555FB0-B513-49EF-9002-A5AF135EA090}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFAC4493-D829-47A2-BFE9-C1742AA64806}
