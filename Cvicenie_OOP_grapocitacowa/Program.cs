@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
+            Console.Title = "Polski Simulator Gry Pocitacowei";
             //Hraci (Class, Power, HP, Mana, Kritical, RefilChanceMana)
-            Player player1 = new Player("Bača Jano", 10, 200, 60, 50, 5); 
-            Player player2 = new Player("Zemepán Nikolaj Palfi", 10, 250, 40, 10, 5);  
+            Player player1 = new Player("Bača Jano", 10, 200, 60, 50, 80); 
+            Player player2 = new Player("Zemepán Nikolaj Palfi", 10, 250, 40, 10, 80);  
 
             //Suboj medzi hracmi
             while (player2.HP >= 0 && player1.HP >= 0)

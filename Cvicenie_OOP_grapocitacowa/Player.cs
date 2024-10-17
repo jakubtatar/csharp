@@ -39,7 +39,9 @@ namespace Cvicenie_OOP_grapocitacowa
             if (randomNumber <= this.CritChance)
             {
                 damageMultiplier = 2;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(this.ClassType + " hit Critical!");
+                Console.ForegroundColor = ConsoleColor.White;
             }
             
 
@@ -57,7 +59,9 @@ namespace Cvicenie_OOP_grapocitacowa
             if (randomNumber <= this.RefilManaChance)
             {
                 this.Mana += 50;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine(this.ClassType + " has refilled his Mana!");
+                Console.ForegroundColor = ConsoleColor.White;
             }
 
             if (this.Mana > 0)
