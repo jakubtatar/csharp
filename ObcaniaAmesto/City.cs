@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,24 +17,25 @@ namespace ObcaniaAmesto
 
         }
 
-        public City(string nazovMiestecka, List<Citizen> obcaniaList)
+        public City(string nazovMiestecka)
         {
             NazovMiestecka = nazovMiestecka;
-            this.obcaniaList = obcaniaList;
+            this.obcaniaList = new List<Citizen>();
         }
 
-        public void PridajObcana(Citizen obcaniaList)
+        public void PridajObcanov(Citizen citizen)
         {
-            
+            obcaniaList.Add(citizen);
         }
 
         public void VypisObcanov()
         {
+            Console.WriteLine("Obyvatelia " + NazovMiestecka);
             foreach (var citizen in obcaniaList)
             {
-                
-                Console.WriteLine();
+                citizen.VypisInfo();
             }
+            Console.WriteLine("");
         }
     }
 }
