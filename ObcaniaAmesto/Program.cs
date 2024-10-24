@@ -20,7 +20,6 @@
             Bratislava.PridajObcanov(Fifo);
             Bratislava.PridajObcanov(Kubo);
 
-
             City Kosice = new City("Kosice");
 
             Kosice.PridajObcanov(Tono);

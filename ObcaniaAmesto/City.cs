@@ -14,7 +14,7 @@ namespace ObcaniaAmesto
 
         public City()
         {
-
+            
         }
 
         public City(string nazovMiestecka)
