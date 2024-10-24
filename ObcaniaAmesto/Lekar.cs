@@ -1,28 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ObcaniaAmesto
 {
     public class Lekar
     {
-        public List<Citizen> zamestnanci { get; set; }
+        public string  Meno { get; set; }
+        public int Vek { get; set; }
 
-        public Lekar()
-        {
+        public Lekar() 
+        { 
 
         }
-
-        public Lekar(List<Citizen> zamestnanci)
+        public Lekar(string meno, int vek)
         {
-            this.zamestnanci = zamestnanci;
+            Meno = meno;
+            Vek = vek;
         }
 
-        public void PridajDoZamestnaniaLekar(Citizen citizen)
+        public void VypisInfo()
         {
-            zamestnanci.Add(citizen);
+            Console.WriteLine("Meno: " + Meno + ", Vek: " + Vek + ", lieci ludi.");
         }
     }
 }
+   

@@ -14,6 +14,7 @@
             Citizen CiernyJozo = new Citizen("Cierny Jozo", 27);
             Citizen Roman = new Citizen("Roman", 58);
 
+           
             City Bratislava = new City("Bratislava");
 
             Bratislava.PridajObcanov(Majo);
