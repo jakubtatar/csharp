@@ -13,7 +13,7 @@ namespace ObcaniaAmesto
 
         public Programator()
         {
-
+            
         }
         public Programator(string meno, int vek)
         {
