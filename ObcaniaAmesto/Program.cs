@@ -14,26 +14,36 @@
             Citizen CiernyJozo = new Citizen("Cierny Jozo", 27);
             Citizen Roman = new Citizen("Roman", 58);
 
+            //BL Povolania
             Lekar LekarZblatislavy = new Lekar("Matko", 129);
             Programator ProgramatorZBlatislavy = new Programator("Kim Ling Tchin", 31);
             Ucitel UcitelZBlatislavy = new Ucitel("目標", 69);
 
+            //KE Povolania
             Lekar LekarZKosic = new Lekar("Imejl Imro", 24);
             Programator ProgramatorZKosic = new Programator("Peter Kentos", 16);
             Ucitel UcitelZKosic = new Ucitel("Duri Nakata", 15);
 
            
             City Bratislava = new City("Bratislava");
-
+            
             Bratislava.PridajObcanov(Majo);
             Bratislava.PridajObcanov(Fifo);
             Bratislava.PridajObcanov(Kubo);
+
+            Bratislava.PridajLekarov(LekarZblatislavy);
+            Bratislava.PridajProgramatorov(ProgramatorZBlatislavy);
+            Bratislava.PridajUcitelov(UcitelZBlatislavy);
 
             City Kosice = new City("Kosice");
 
             Kosice.PridajObcanov(Tono);
             Kosice.PridajObcanov(CiernyJozo);
             Kosice.PridajObcanov(Roman);
+
+            Kosice.PridajLekarov(LekarZKosic);
+            Kosice.PridajProgramatorov(ProgramatorZKosic);
+            Kosice.PridajUcitelov(UcitelZKosic);
 
             Bratislava.VypisObcanov();    
             Kosice.VypisObcanov();

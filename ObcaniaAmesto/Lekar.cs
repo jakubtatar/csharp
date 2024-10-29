@@ -8,24 +8,13 @@ using System.Xml.Linq;
 
 namespace ObcaniaAmesto
 {
-    public class Lekar
+    class Lekar : Citizen
     {
-        public string  Meno { get; set; }
-        public int Vek { get; set; }
-
-        public Lekar() 
-        { 
-
-        }
-        public Lekar(string meno, int vek)
-        {
-            Meno = meno;
-            Vek = vek;
-        }
+        public Lekar(string meno, int vek) : base(meno, vek){ }
 
         public void VypisInfo()
         {
-            Console.WriteLine("Meno: " + Meno + ", Vek: " + Vek + ", lieci ludi.");
+            Console.WriteLine("Meno: " + meno + ", Vek: " + vek + ", lieci ludi.");
         }
     }
 }

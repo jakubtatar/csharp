@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObcaniaAmesto
 {
-    public class Citizen
+    class Citizen
     {
         public string Name { get; set; }
         public int Age { get; set; }
@@ -25,7 +25,12 @@ namespace ObcaniaAmesto
 
         public void VypisInfo()
         {           
-            Console.WriteLine("Meno: " + Name + ", Vek: " + Age);           
+            Console.WriteLine("Meno: " + Name);           
+        }
+
+        public void VypisVek()
+        {
+            Console.WriteLine("Vek: " + Age);
         }
     }
 }
