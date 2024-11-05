@@ -10,11 +10,12 @@ namespace ObcaniaAmesto
 {
     class Lekar : Citizen
     {
-        public Lekar(string meno, int vek) : base(meno, vek){ }
+        public Lekar(string name, int age) : base(name, age) { }    
+        
 
-        public void VypisInfo()
+        public new void VypisInfo()
         {
-            Console.WriteLine("Meno: " + meno + ", Vek: " + vek + ", lieci ludi.");
+            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", lieci ludi.");
         }
     }
 }

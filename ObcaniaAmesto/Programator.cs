@@ -1,29 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ObcaniaAmesto
 {
-    public class Programator
+    public class Programator : Citizen
     {
-        public string Meno { get; set; }
-        public int Vek { get; set; }
-
-        public Programator()
+        public string programovaciJazyk { get; set; }
+        public Programator(string name, int age, string programovaciJazyk) : base(name, age)
         {
-            
-        }
-        public Programator(string meno, int vek)
-        {
-            Meno = meno;
-            Vek = vek;
+            this.programovaciJazyk = programovaciJazyk;
         }
 
-        public void VypisInfo()
+        public override void VypisInfo()
         {
-            Console.WriteLine("Meno: " + Meno + ", Vek: " + Vek + ", pise kodiky.");
+            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", pise kodiky v jazyku " + programovaciJazyk);
         }
     }
 }

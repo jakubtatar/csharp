@@ -6,24 +6,15 @@ using System.Threading.Tasks;
 
 namespace ObcaniaAmesto
 {
-    public class Ucitel
+    class Ucitel : Citizen
     {
-        public string Meno { get; set; }
-        public int Vek { get; set; }
-
-        public Ucitel()
+        public Ucitel(string name, int age) : base(name, age)
         {
-
-        }
-        public Ucitel(string meno, int vek)
-        {
-            Meno = meno;
-            Vek = vek;
         }
 
-        public void VypisInfo()
+        public new void VypisInfo()
         {
-            Console.WriteLine("Meno: " + Meno + ", Vek: " + Vek + ", uci detiska nepodarene.");
+            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", uci detiska nepodarene.");
         }
     }
 }

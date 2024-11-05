@@ -4,46 +4,32 @@
     {
         static void Main(string[] args)
         {
-            //BL
-            Citizen Majo = new Citizen("Majo", 34);
-            Citizen Fifo = new Citizen("Fifo", 14);
-            Citizen Kubo = new Citizen("Kubo", 20);
-
-            //KE
-            Citizen Tono = new Citizen("Tono", 49);
-            Citizen CiernyJozo = new Citizen("Cierny Jozo", 27);
-            Citizen Roman = new Citizen("Roman", 58);
-
-            //BL Povolania
-            Lekar LekarZblatislavy = new Lekar("Matko", 129);
-            Programator ProgramatorZBlatislavy = new Programator("Kim Ling Tchin", 31);
-            Ucitel UcitelZBlatislavy = new Ucitel("目標", 69);
-
-            //KE Povolania
-            Lekar LekarZKosic = new Lekar("Imejl Imro", 24);
-            Programator ProgramatorZKosic = new Programator("Peter Kentos", 16);
-            Ucitel UcitelZKosic = new Ucitel("Duri Nakata", 15);
-
-           
-            City Bratislava = new City("Bratislava");
-            
-            Bratislava.PridajObcanov(Majo);
-            Bratislava.PridajObcanov(Fifo);
-            Bratislava.PridajObcanov(Kubo);
-
-            Bratislava.PridajLekarov(LekarZblatislavy);
-            Bratislava.PridajProgramatorov(ProgramatorZBlatislavy);
-            Bratislava.PridajUcitelov(UcitelZBlatislavy);
-
             City Kosice = new City("Kosice");
+            City Bratislava = new City("Bratislava");
 
-            Kosice.PridajObcanov(Tono);
-            Kosice.PridajObcanov(CiernyJozo);
-            Kosice.PridajObcanov(Roman);
+            while (Bratislava.obcaniaList.Count < 31)
+            {
+                Citizen o = GeneratorObcanov.GenerujObcana();
+                Bratislava.PridajObcanov(o);
+            }
 
-            Kosice.PridajLekarov(LekarZKosic);
-            Kosice.PridajProgramatorov(ProgramatorZKosic);
-            Kosice.PridajUcitelov(UcitelZKosic);
+            for (int i = 0; i < 31; i++)
+            {
+                Citizen o = GeneratorObcanov.GenerujObcana();
+                Kosice.PridajObcanov(o);
+            }
+            
+            for (int i =0; i < 10; i++)
+            {
+                Programator p = GeneratorObcanov.GenerujProgramatora();
+                Bratislava.PridajObcanov(p);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Programator p = GeneratorObcanov.GenerujProgramatora();
+                Kosice.PridajObcanov(p);
+            }
 
             Bratislava.VypisObcanov();    
             Kosice.VypisObcanov();
