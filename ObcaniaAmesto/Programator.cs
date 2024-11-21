@@ -9,7 +9,7 @@ namespace ObcaniaAmesto
 {
     public class Programator : Citizen
     {
-        public string programovaciJazyk { get; set; }
+        protected string programovaciJazyk { get; set; }
         public Programator(string name, int age, string programovaciJazyk) : base(name, age)
         {
             this.programovaciJazyk = programovaciJazyk;
@@ -17,7 +17,7 @@ namespace ObcaniaAmesto
 
         public override void VypisInfo()
         {
-            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", pise kodiky v jazyku " + programovaciJazyk);
+            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", pise kodiky v jazyku " + programovaciJazyk + " Stav: " + Stav);
         }
     }
 }

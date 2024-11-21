@@ -8,20 +8,38 @@ namespace ObcaniaAmesto
 {
     public class Citizen
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
+        protected string name;
+        protected int age;
+        protected StavObcana stav;
 
 
+        public string Name
+        {
+            get { return name; } 
+            set {  name = value; }
+        }
+
+        public int Age 
+        { 
+            get { return age; }
+            set { age = value; }
+        }
+
+        public StavObcana Stav
+        {
+            get { return stav; }
+            set { stav = value; }
+        }
 
         public Citizen(string name, int age)
         {
-            Name = name;
-            Age = age;
+            this.name = name;
+            this.age = age;
         }
 
         public virtual void VypisInfo()
         {           
-            Console.WriteLine("Meno: " + Name + ", Vek: " + Age);           
+            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", Stav: " + Stav);           
         }
 
         public virtual void VypisVek()
@@ -29,4 +47,12 @@ namespace ObcaniaAmesto
             Console.WriteLine("Vek: " + Age);
         }
     }
+
+    public enum StavObcana
+    {
+        Domaci,
+        Cudzinec,
+        Turista
+    }
+
 }

@@ -8,13 +8,13 @@ namespace ObcaniaAmesto
 {
     class Ucitel : Citizen
     {
-        public Ucitel(string name, int age) : base(name, age)
+        private Ucitel(string name, int age) : base(name, age)
         {
         }
 
         public new void VypisInfo()
         {
-            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", uci detiska nepodarene.");
+            Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", uci detiska nepodarene." + " Stav: " + Stav);
         }
     }
 }
