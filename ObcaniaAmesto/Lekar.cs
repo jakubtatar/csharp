@@ -10,6 +10,10 @@ namespace ObcaniaAmesto
 {
     class Lekar : Citizen
     {
+        public Lekar()
+        {
+        }
+
         private Lekar(string name, int age) : base(name, age) { }    
         
 

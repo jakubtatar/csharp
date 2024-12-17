@@ -12,6 +12,11 @@ namespace ObcaniaAmesto
         {
         }
 
+        public Ucitel()
+        {
+
+        }
+
         public new void VypisInfo()
         {
             Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", uci detiska nepodarene." + " Stav: " + Stav);

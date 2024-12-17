@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Security;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ObcaniaAmesto
@@ -14,7 +17,9 @@ namespace ObcaniaAmesto
         
         public City()
         {            
+             
         }
+        
 
         public City(string nazovMiestecka)
         {
@@ -37,6 +42,24 @@ namespace ObcaniaAmesto
                 citizen.VypisInfo();
             }
             Console.WriteLine("");
+        }
+
+        public void UlozDoSuboru(string nazovSuboru)
+        {
+            string json = JsonSerializer.Serialize(this);
+            File.WriteAllText(nazovSuboru, json);
+            Console.WriteLine("Data boli ulozene");
+        }
+
+        public static City NacitajZoSuboru(string nazovSuboru)
+        {
+            if (File.Exists(nazovSuboru))
+            {
+                string json = File.ReadAllText(nazovSuboru);
+                City mesto = JsonSerializer.Deserialize<City>(json);
+                return mesto;
+            }
+            return null;
         }
     }
 }

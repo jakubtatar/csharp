@@ -15,6 +15,10 @@ namespace ObcaniaAmesto
             this.programovaciJazyk = programovaciJazyk;
         }
 
+        public Programator()
+        {
+        }
+
         public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", pise kodiky v jazyku " + programovaciJazyk + " Stav: " + Stav);

@@ -7,6 +7,8 @@
             City Kosice = new City("Kosice");
             City Bratislava = new City("Bratislava");
 
+            string subor = Bratislava.NazovMiestecka + "mesto.json";
+
             while (Bratislava.obcaniaList.Count < 31)
             {
                 Citizen o = GeneratorObcanov.GenerujObcana();
@@ -30,6 +32,7 @@
                 Programator p = GeneratorObcanov.GenerujProgramatora();
                 Kosice.PridajObcanov(p);
             }
+            Bratislava.UlozDoSuboru(subor);
 
             Bratislava.VypisObcanov();    
             Kosice.VypisObcanov();

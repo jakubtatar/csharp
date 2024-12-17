@@ -37,6 +37,10 @@ namespace ObcaniaAmesto
             this.age = age;
         }
 
+        public Citizen()
+        {
+        }
+
         public virtual void VypisInfo()
         {           
             Console.WriteLine("Meno: " + Name + ", Vek: " + Age + ", Stav: " + Stav);           
