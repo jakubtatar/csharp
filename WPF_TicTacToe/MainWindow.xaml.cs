@@ -39,11 +39,13 @@ namespace WPF_TicTacToe
 
             if (LastPlayer == PlayerOne)
             {
+                PlayerMark.Content = "✕";
                 button.Content = PlayerTwo;
                 LastPlayer = PlayerTwo;
             }
             else if (LastPlayer == PlayerTwo)
             {
+                PlayerMark.Content = "〇";
                 button.Content = PlayerOne;
                 LastPlayer = PlayerOne;
             }

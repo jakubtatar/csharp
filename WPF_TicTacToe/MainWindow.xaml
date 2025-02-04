@@ -20,6 +20,7 @@
         <Button x:Name="Button_2x2" Content="" HorizontalAlignment="Left" Margin="294,286,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="72" FontFamily="Rockwell" Background="#FFE8E8E8" Click="Button_0x0_Click" BorderBrush="#FFD1BFBF" BorderThickness="0"/>
         <Label Content="Tic-Tac-Toe!" HorizontalAlignment="Left" Margin="101,5,0,0" VerticalAlignment="Top" Height="66" Width="293" FontSize="48" FontFamily="Rockwell"/>
         <Button Name ="ResetButton" Content="Reset" HorizontalAlignment="Left" Margin="189,405,0,0" VerticalAlignment="Top" Height="30" Width="100" FontSize="23" FontFamily="Rockwell" RenderTransformOrigin="0.568,-0.297" Click="ResetButton_Click"/>
+        <Label Name="PlayerMark" Content="✕" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="66" Width="50" FontSize="30" FontFamily="Rockwell"/>
 
     </Grid>
 </Window>
