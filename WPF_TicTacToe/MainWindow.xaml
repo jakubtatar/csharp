@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="793">
+    <Grid Margin="0,0,10,-6">
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
         <Button Name="Button_0x0" Content="" HorizontalAlignment="Left" Margin="80,46,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="72" FontFamily="Rockwell" Background="#FFE8E8E8" Click="Button_0x0_Click" BorderBrush="#FFD1BFBF" BorderThickness="0"/>

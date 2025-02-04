@@ -44,10 +44,28 @@ namespace WPF_TicTacToe
             }
 
             var isWinner = CHeckWinner();
-            if (isWinner) 
+            if (isWinner)
             {
-                MessageBox.Show("Vyhral hrac: " + LastPlayer);
-            
+                var result = MessageBox.Show(messageBoxText: "Vyhral hrac: " + LastPlayer + ", chcete pokracovat?",
+                    caption: "Pokracovat v hre",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Information);
+                if (result == MessageBoxResult.Yes)
+                {
+                    Button_0x0.Content = "";
+                    Button_0x1.Content = "";
+                    Button_0x2.Content = "";
+                    Button_1x0.Content = "";
+                    Button_1x1.Content = "";
+                    Button_1x2.Content = "";
+                    Button_2x0.Content = "";
+                    Button_2x1.Content = "";
+                    Button_2x2.Content = "";
+                }
+                else
+                {
+                    this.Close();
+                }      
             }
         }
 
@@ -70,29 +88,38 @@ namespace WPF_TicTacToe
             var b_2x2 = Button_2x2.Content.ToString();
 
             //kontrola prveho stlpca
-            if (b_0x0 == b_0x1 && b_0x0 == b_0x2)
+            if ((b_0x0 == b_0x1 && b_0x1 == b_0x2) && (b_0x0 != "" && b_0x1 != "" && b_0x2 != ""))
             {
                 return true;
             }
             //kontrola druheho stlpca
-            if (b_1x0 == b_1x1 && b_1x0 == b_1x2)
+            if ((b_1x0 == b_1x1 && b_1x1 == b_1x2) && (b_1x0 != "" && b_1x1 != "" && b_1x2 != ""))
             {
                 return true;
             }
             //kontrola tretieho stlpca
-            if (b_2x0 == b_2x1 && b_2x0 == b_2x2)
+            if ((b_2x0 == b_2x1 && b_2x1 == b_2x2) && (b_2x0 != "" && b_2x1 != "" && b_2x2 != ""))
             {
                 return true;
             }
 
             //kontrola prveho riadku
-            if (b_0x0 == b_1x0 && b_0x0 == b_2x0)
+            if ((b_0x0 == b_1x0 && b_1x0 == b_2x0) && (b_0x0 != "" && b_1x0 != "" && b_2x0 != ""))
             {
                 return true;
             }
-        
 
+            //kontrola druheho riadku
+            if ((b_0x1 == b_1x1 && b_1x1 == b_2x1) && (b_0x1 != "" && b_1x1 != "" && b_2x1 != ""))
+            {
+                return true;
+            }
 
+            //kontrola tretieho riadku
+            if ((b_0x2 == b_1x2 && b_1x2 == b_2x2) && (b_0x2 != "" && b_1x2 != "" && b_2x2 != ""))
+            {
+                return true;
+            }
 
             return false;
         }
