@@ -121,7 +121,33 @@ namespace WPF_TicTacToe
                 return true;
             }
 
+            //kontrola diagonalne 1
+            if ((b_0x0 == b_1x1 && b_1x1 == b_2x2) && (b_0x0 != "" && b_1x1 != "" && b_2x2 != ""))
+            {
+                return true;
+            }
+
+            //kontrola diagonalne 2
+            if ((b_2x0 == b_1x1 && b_1x1 == b_0x2) && (b_2x0 != "" && b_1x1 != "" && b_0x2 != ""))
+            {
+                return true;
+            }
+
+
             return false;
+        }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button_0x0.Content = "";
+            Button_0x1.Content = "";
+            Button_0x2.Content = "";
+            Button_1x0.Content = "";
+            Button_1x1.Content = "";
+            Button_1x2.Content = "";
+            Button_2x0.Content = "";
+            Button_2x1.Content = "";
+            Button_2x2.Content = "";
         }
     }
 }
