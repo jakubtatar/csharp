@@ -42,5 +42,19 @@ namespace Stickmen_Fight.Windows
             var pokemonSurvive = gameEngine.SecondFighter.TakeDamage(damage);
             RefreshElements();
         }
+
+        private void Button_Pokemon1_HardAttack_Click(object sender, RoutedEventArgs e)
+        {
+            var damage = gameEngine.FirstFighter.Attack2();
+            var pokemonSurvive = gameEngine.SecondFighter.TakeDamage(damage);
+            RefreshElements();
+        }
+
+        private void Button_Pokemon1_Critical_Click(object sender, RoutedEventArgs e)
+        {
+            var damage = gameEngine.FirstFighter.Attack3();
+            var pokemonSurvive = gameEngine.SecondFighter.TakeDamage(damage);
+            RefreshElements();
+        }
     }
 }
