@@ -6,17 +6,5 @@
         xmlns:local="clr-namespace:Stickmen_Fight"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid>
-        <Image Margin="40,49,628,205" Source="/Images/pikachu.png" Stretch="Fill"/>
-        <Image Margin="507,32,33,205" Source="/Images/charizard.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.099"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-    </Grid>
+    <Grid/>
 </Window>
