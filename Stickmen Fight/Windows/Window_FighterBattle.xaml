@@ -23,8 +23,13 @@
         <Label x:Name="Label_Pokemon1_HP" Content="X/X" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="40,287,0,0" VerticalAlignment="Top" Height="29" Width="300" FontFamily="Rockwell" FontSize="18"/>
         <ProgressBar x:Name="ProgressBar_Pokemon2_HP" HorizontalAlignment="Left" Height="23" Margin="460,259,0,0" VerticalAlignment="Top" Width="300" Maximum="100"/>
         <Label x:Name="Label_Pokemon2_HP" Content="X/X" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="460,287,0,0" VerticalAlignment="Top" Height="29" Width="300" FontFamily="Rockwell" FontSize="18"/>
-        <Button x:Name="Button_Pokemon1_LightAttack" Content="Light Attack" HorizontalAlignment="Left" Margin="53,321,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFA5E895" Click="Button_Click"/>
-        <Button x:Name="Button_Pokemon1_HardAttack" Content="Hard Attack" HorizontalAlignment="Left" Margin="190,321,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFE89595" Click="Button_Pokemon1_HardAttack_Click"/>
-        <Button x:Name="Button_Pokemon1_Critical" Content="Critical" HorizontalAlignment="Left" Margin="53,364,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFE3CF82" Click="Button_Pokemon1_Critical_Click"/>
+        <Button x:Name="Button_Pokemon1_LightAttack" Content="Light Attack" HorizontalAlignment="Left" Margin="53,321,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFA5E895" Click="Button_Click" />
+        <Button x:Name="Button_Pokemon1_HardAttack" Content="Hard Attack" HorizontalAlignment="Left" Margin="190,321,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFE89595" Click="Button_Pokemon1_HardAttack_Click" />
+        <Button x:Name="Button_Pokemon1_Critical" Content="Critical" HorizontalAlignment="Left" Margin="53,364,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFE3CF82" Click="Button_Pokemon1_Critical_Click" />
+        <Button x:Name="Button_Pokemon1_Heal" Content="Heal" HorizontalAlignment="Left" Margin="190,364,0,0" VerticalAlignment="Top" Height="38" Width="132" FontFamily="Rockwell" FontSize="22" Background="#FFB182E3" Click="Button_Pokemon1_Heal_Click" />
+        <Label x:Name="Label_Fighter1_Name" Content="Fighter 1" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="40,15,0,0" VerticalAlignment="Top" Height="34" Width="300" FontFamily="Rockwell" FontSize="18" FontWeight="Bold" />
+        <Label x:Name="Label_Fighter2_Name" Content="Fighter 2" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="460,15,0,0" VerticalAlignment="Top" Height="46" Width="300" FontFamily="Rockwell" FontSize="18" FontWeight="Bold"/>
+        <ListBox Name="ListBox_FightLog" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#7FF0DEDE" FontFamily="Rockwell" FontSize="12" Margin="327,321,10,10"/> 
+
     </Grid>
 </Window>

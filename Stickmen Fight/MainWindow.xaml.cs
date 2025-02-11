@@ -24,7 +24,7 @@ namespace Stickmen_Fight
 
             Window_PokemonBattle = new Window_FighterBattle();
             Window_PokemonBattle.Show();
-            this.Hide();  
+            this.Close();  
         }
     }
 }

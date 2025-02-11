@@ -38,17 +38,6 @@ namespace Stickmen_Fight
         {
             Random random = new Random();
             int healValue = random.Next(20, 71);
-            if (health <= 100 )
-            {
-                if(health + healValue > 100)
-                {
-                    health = 100;
-                }
-                else
-                {
-                    health += healValue;
-                }
-            }
             return healValue;
         }
 
@@ -61,6 +50,21 @@ namespace Stickmen_Fight
                 return false;
             }
             return true;
+        }
+
+        public void TakeHeal(int healValue)
+        {
+            if (health <= 100)
+            {
+                if (health + healValue > 100)
+                {
+                    health = 100;
+                }
+                else
+                {
+                    health += healValue;
+                }
+            }
         }
     }
 }
