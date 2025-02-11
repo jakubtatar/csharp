@@ -22,9 +22,9 @@ namespace Stickmen_Fight
         {
             InitializeComponent();
 
-            Window_PokemonBattle = new Window_FighterBattle();
+          /*Window_PokemonBattle = new Window_FighterBattle();
             Window_PokemonBattle.Show();
-            this.Close();  
+            this.Close();  */
         }
     }
 }
