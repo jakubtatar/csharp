@@ -21,12 +21,12 @@ namespace Stickmen_Fight.Windows
     public partial class Window_FighterBattle : Window
     {
         //Properties
-        public GameEngine gameEngine { get; set; } = new GameEngine();
+        public GameEngine gameEngine { get; set; }
         public List<string> FightLogger { get; set; } = new List<string>();
-        public Window_FighterBattle()
+        public Window_FighterBattle(GameEngine GameEngine)
         {
             InitializeComponent();
-
+            gameEngine = GameEngine;
             RefreshElements();
         }
 
@@ -34,10 +34,10 @@ namespace Stickmen_Fight.Windows
         private void RefreshElements()
         {
             ProgressBar_Pokemon1_HP.Value = gameEngine.FirstFighter.health;
-            Label_Pokemon1_HP.Content = gameEngine.FirstFighter.health + "/100";
+            Label_Pokemon1_HP.Content = gameEngine.FirstFighter.health + "/" + gameEngine.FirstFighter.maxHealth;
 
             ProgressBar_Pokemon2_HP.Value = gameEngine.SecondFighter.health;
-            Label_Pokemon2_HP.Content = gameEngine.SecondFighter.health + "/100";
+            Label_Pokemon2_HP.Content = gameEngine.SecondFighter.health + "/" + gameEngine.SecondFighter.maxHealth;
 
             ListBox_FightLog.Items.Clear();
             foreach (var log in FightLogger)

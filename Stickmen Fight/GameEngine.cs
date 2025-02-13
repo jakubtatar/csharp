@@ -8,13 +8,14 @@ namespace Stickmen_Fight
 {
     public class GameEngine
     {
+
         public Fighter FirstFighter {  get; set; }
         public Fighter SecondFighter { get; set; }
 
         public GameEngine()
         {
-            FirstFighter = new Fighter(name: "Pikachu");
-            SecondFighter = new Fighter(name: "Charizard");
+            FirstFighter = new Fighter(name: "Pikachu", 200, 1);
+            SecondFighter = new Fighter(name: "Charizard", 100, 1);
         
         }
     }

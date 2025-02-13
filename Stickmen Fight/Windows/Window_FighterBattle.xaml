@@ -19,7 +19,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <ProgressBar x:Name="ProgressBar_Pokemon1_HP" HorizontalAlignment="Left" Height="23" Margin="40,259,0,0" VerticalAlignment="Top" Width="300" Maximum="100"/>
+        <ProgressBar x:Name="ProgressBar_Pokemon1_HP" HorizontalAlignment="Left" Height="23" Margin="40,259,0,0" VerticalAlignment="Top" Width="300" Maximum="200"/>
         <Label x:Name="Label_Pokemon1_HP" Content="X/X" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="40,287,0,0" VerticalAlignment="Top" Height="29" Width="300" FontFamily="Rockwell" FontSize="18"/>
         <ProgressBar x:Name="ProgressBar_Pokemon2_HP" HorizontalAlignment="Left" Height="23" Margin="460,259,0,0" VerticalAlignment="Top" Width="300" Maximum="100"/>
         <Label x:Name="Label_Pokemon2_HP" Content="X/X" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="460,287,0,0" VerticalAlignment="Top" Height="29" Width="300" FontFamily="Rockwell" FontSize="18"/>

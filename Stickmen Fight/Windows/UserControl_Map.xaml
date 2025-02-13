@@ -7,9 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Name="Grid_Map" Background="#FFD1EB96">
-        <Button x:Name="Button_Charizard" Content="Charizard" HorizontalAlignment="Left" Margin="38,60,0,0" VerticalAlignment="Top" Height="70" Width="228" FontSize="24" FontFamily="Rockwell" Click="Button_Click"/>
-        <Button x:Name="Button_Newtwo" Content="Newtwo" HorizontalAlignment="Left" Margin="152,181,0,0" VerticalAlignment="Top" Height="70" Width="228" FontSize="24" FontFamily="Rockwell" Click="Button_Click"/>
-        <Button x:Name="Button_Eevee" Content="Eevee" HorizontalAlignment="Left" Margin="56,302,0,0" VerticalAlignment="Top" Height="70" Width="228" FontSize="24" FontFamily="Rockwell" Click="Button_Click"/>
-
+       
     </Grid>
 </UserControl>
