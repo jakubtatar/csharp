@@ -34,7 +34,7 @@ namespace Stickmen_Fight.Windows
         private void RefreshElements()
         {
             ProgressBar_Pokemon1_HP.Value = gameEngine.FirstFighter.health;
-            Label_Pokemon1_HP.Content = gameEngine.FirstFighter.health + "/" + gameEngine.FirstFighter.maxHealth;
+            Label_Pokemon2_HP.Content = gameEngine.FirstFighter.health + "/" + gameEngine.FirstFighter.maxHealth;
 
             ProgressBar_Pokemon2_HP.Value = gameEngine.SecondFighter.health;
             Label_Pokemon2_HP.Content = gameEngine.SecondFighter.health + "/" + gameEngine.SecondFighter.maxHealth;
